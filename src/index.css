@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.decore{
+    /* Decore */
+
+position: absolute;
+width: 1440px;
+height: 808px;
+left: 233px;
+top: -347.66px;
+
+opacity: 0.6;
+transform: matrix(0.71, 0.71, 0.71, -0.71, 0, 0);
+
+}
