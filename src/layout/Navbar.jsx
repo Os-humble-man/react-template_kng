@@ -26,7 +26,6 @@ export default function Navbar() {
             <li className='cursor-pointer hover:border-b-2 hover:font-semibold pb-1 hover:border-black'>Upcoming Events</li>
             <li className='cursor-pointer hover:border-b-2 hover:font-semibold pb-1 hover:border-black'>Browse Events</li>
             <li className='cursor-pointer hover:border-b-2 hover:font-semibold pb-1 hover:border-black' onClick={() => navigate("/about")}>About</li>
-            <li className='cursor-pointer hover:border-b-2 hover:font-semibold pb-1 hover:border-black'>Login</li>
           </ul>
         </div>
 

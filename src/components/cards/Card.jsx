@@ -1,8 +1,9 @@
 import React from 'react';
 
 export default function Card({ image, title, body }) {
+  
   return (
-    <div className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow ">
       <a href="#">
         <img
           className="rounded-t-lg h-48 w-full object-cover md:h-60" // Adjust height on different screen sizes

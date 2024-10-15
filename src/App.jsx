@@ -3,6 +3,10 @@ import Home from './pages/Home';
 import EventForm from './pages/AddEventPage';
 import AboutPage from './pages/About';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Login from './pages/Admin/AdminLogin';
+import EventAdminPage from './pages/Admin/EventAdminPage';
+import React from 'react';
+import Authenticated from './Authentication';
 
 function App() {
   return (
@@ -10,8 +14,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/new_event" element={<EventForm />} />
-        <Route path="/event_details" element={<EventDetails />} /> {/* Ajoutez d'autres routes si nécessaire */}
+        <Route path="/Login" element={<Login />} />
+        <Route path="/event_details" element={<EventDetails />} />
+        <Route exact path="/add-event" element={<EventForm />} />
+        <Route
+            exact
+            path="/admin-manage-events"
+            element={<EventAdminPage />}
+          />
+
+
+        {/* <Route element={<Authenticated />}> */}
+   
+        {/* </Route> */}
       </Routes>
     </Router>
   );
